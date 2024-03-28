@@ -1,0 +1,67 @@
+.Transport{
+    padding:70px;
+    background-color:#000000;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.Cards {
+    width:500px;
+    padding:20px;
+    text-align: center;
+    padding: 50px;
+	transition: all 0.3s ease;
+    background-color: #333333;
+    height:500px;
+    border-radius: 15px;
+}
+
+
+.Cards:hover {
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	transform: scale(1);
+    border-color: transparent;
+    border-radius: 15px;
+}
+
+.h33{
+    font-size: 4rem;
+    padding:20px;
+    color: #999;
+}
+.heading{
+    font-size: 60px;
+    padding:20px;;
+    text-align: center;
+}
+.house{
+    color:aliceblue
+}
+@media (max-width: 768px){
+    .Transport{
+        display: flex;
+        flex-wrap: wrap;
+        padding:10px;
+        
+    }
+    .h33{
+        font-size: 3rem;
+        padding:10px;
+        color: #999;
+    }
+    .Cards {
+        width:500px;
+        padding:20px;
+        text-align: center;
+        padding: 50px;
+        transition: all 0.3s ease;
+        background-color: #333333;
+        height:400px;
+        border-radius: 15px;
+    }
+}
