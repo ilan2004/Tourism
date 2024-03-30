@@ -1,0 +1,172 @@
+:root {
+    /*===== Colores =====*/
+    --first-color: white;
+    --white-color: #E9EAEC;
+    --dark-color: #1d21302c;
+    --dark-color-lighten: #f2f5ffc1;
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+
+
+a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*===== CARD =====*/
+  .container {
+      height: auto; 
+      align-items: center;
+      
+      grid-column: auto;
+      grid-row: auto;
+      
+      
+    }
+    
+    .card {
+      width: 320px;
+      height: 400px;
+      background-image: linear-gradient(#451952, #AE445A);
+      border-radius: 1rem;
+      padding: 4rem 2rem 0;
+      color: var(--white-color);
+      overflow-y: hidden;
+      flex: 0 0 auto; /* Add this line */
+       /* Add margin to separate cards */
+       
+    }
+  .card__img {
+    position: absolute;
+    width: 260px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+    border-radius: 8%;
+  }
+  
+  .card__data {
+    transform: translateY(13.2rem);
+    text-align: center;
+  }
+  
+  .card__title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: .5rem;
+  }
+  
+  .show {
+    display: inline-block;
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    background-color:#E9EAEC;
+    color:black;
+    padding:8px 15px;
+    border-radius: 20%;
+  }
+  
+  .card__description {
+    font-size: var(--small-font-size);
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+  }
+  
+  .card__button,
+  .card__vr {
+    display: block;
+    width: max-content;
+    padding: 1.125rem 2rem;
+    background-color: var(--first-color);
+    color: var(--dark-color);
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .2s;
+    opacity: 0;
+    margin-top: 5px;
+  }
+  
+  .card__button:hover,
+  .card__vr:hover {
+    box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+  }
+  
+  .card__img, 
+  .card__data, 
+  .card__title, 
+  .show, 
+  .card__description {
+    transition: .5s;
+  }
+  
+  /* Hover card effect */
+  .card:hover .card__img {
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+  }
+  
+  .card:hover .card__data {
+    transform: translateY(4.8rem);
+  }
+  
+  .card:hover .card__title {
+    transform: translateX(-2.3rem);
+    margin-bottom: 0;
+  }
+  
+  .card:hover .show {
+    transform: translateX(-6.8rem);
+  }
+  
+  .card:hover .card__description, 
+  .card:hover .card__button,
+  .card:hover .card__vr {
+    transition-delay: .2s;
+    opacity: 1;
+  }
+  /* extras */
+  .book{
+      background-color: #000000;
+  }
+  .container felx_space{
+      background-color: white;
+      .offer {
+          display: inline-block;
+        }
+        
+  }
+  /* Apply flexbox to the .offer-container */
+  .offer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: var(--dark-color-lighten);
+      padding: 20px; /* Add padding to create space around the cards */
+      background-image:linear-gradient(#662549, #1D1A39);
+    }
+    
+    .offer {
+      flex: 0 0 calc(10% - 40px); /* Adjust the width and spacing as needed */
+      margin-bottom: 10px; /* Add margin between rows of cards */
+    }
+  
+    .card {
+      box-shadow: 0 0 10px black;
+    }
+  .offer-container2{
+    background-image:linear-gradient(#1D1A39,#662549 );
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: var(--dark-color-lighten);
+      padding: 20px; /* Add padding to create space around the cards */
+  
+  }
