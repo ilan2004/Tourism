@@ -1,6 +1,7 @@
 import React from 'react'
 import './BookCard.css'
-const BookCard = ({ card_title,card_des,room_img, redirect }) => {
+import htmlContent from '../room1/index.html'
+const BookCard = ({ card_title,card_des,room_img,}) => {
   return (
     <div class="offer">
 <div class="container">
@@ -13,7 +14,7 @@ const BookCard = ({ card_title,card_des,room_img, redirect }) => {
       <a href="#"class="show">View</a>
       <p class="card__description">{card_des}</p>
       <a href="#" class="card__button">Show prices</a>
-      <a href={redirect} class="card__vr">View in VR</a>
+      <a href={htmlContent} class="card__vr">View in VR</a>
     </div>
   </div>
 </div>
