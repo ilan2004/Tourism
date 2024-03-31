@@ -64,7 +64,7 @@
 .box:hover{-webkit-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
 	-moz-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
 	box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
-	transform: scale(1.0.5);
+	transform: scale(1.03);
     border-color: transparent;
     border-radius: 15px;
 

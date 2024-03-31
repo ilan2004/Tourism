@@ -43,7 +43,7 @@
         position: relative;
     }
     .content h1{
-        font-size: 10rem;
+        font-size: 15rem;
         color:#fff;
         font-weight: 600;
         transition: 3s;
@@ -56,7 +56,7 @@
         text-decoration:none;
         display:inline-block;
         color:#fff;
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         border: 2px solid #fff;
         padding:14px 70px;
         border-radius: 50px;
@@ -74,7 +74,7 @@
 }
     @media (max-width: 768px){
         .content h1{
-            font-size: 5.5rem;
+            font-size: 8rem;
             color:#fff;
             font-weight: 600;
             transition: 3s;
@@ -83,7 +83,7 @@
             text-decoration:none;
             display:inline-block;
             color:#fff;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             border: 2px solid #fff;
             padding:10px 50px;
             border-radius: 50px;

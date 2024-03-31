@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import { NavLink } from 'react-router-dom';
 import main from '../../../assets/main1.mp4'
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
             <source src={main} type="video/mp4" />
         </video>
     <div class="content"><h1>WHETRIP</h1>
-      <a class ="explore"href="C:\Users\ILAN\Desktop\WHETRIP\second\slide.html">Explore</a>
+    <NavLink to="/Booking"> <a class ="explore">Explore</a></NavLink>
      </div>
 
 

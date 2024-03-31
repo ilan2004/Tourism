@@ -1,27 +1,22 @@
-
-
-import './Navbar.css'
-import logo from  '../../assets/logo.png';
-const Navbars =() => {
+import './Navbar.css';
+import logo from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
+const Navbars = () => {
   return (
     <>
-    <nav class="whetrip">
-      <label class="logo">
-        <img src={logo}
-        width="60px"
-        height="60px"/>
-      <p class="label">WHETRIP</p>
-      </label>
+      <nav className="whetrip">
+        <label className="logo">
+          <img src={logo} alt="Logo" width="60px" height="60px" />
+          <p className="label">WHETRIP</p>
+        </label>
         <ul>
-            <li><a class="active" href="#main">Home</a></li>
-            <li><a href="#about">gallery</a></li>
-            <li><a >Book a Room</a></li>
-            <li><a >Rent a car</a></li>
-            <li><a >AI</a></li>
-             
+          <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/about" activeClassName="active">Gallery</NavLink></li>
+          <li><NavLink to="/Booking" activeClassName="active">Book a Room</NavLink></li>
+          <li><NavLink to="/RentCar" activeClassName="active">Rent a Car</NavLink></li>
+          <li><NavLink to="/AI" activeClassName="active">AI</NavLink></li>
         </ul>
-     </nav>
-
+      </nav>
     </>
   );
 }
