@@ -14,7 +14,7 @@ const BookCard = ({ card_title,card_des,room_img,}) => {
       <a href="#"class="show">View</a>
       <p class="card__description">{card_des}</p>
       <a href="#" class="card__button">Show prices</a>
-      <a  class="card__vr">View in VR</a>
+      <a href="/room1/hotel1.html" class="card__vr">View in VR</a>
     </div>
   </div>
 </div>

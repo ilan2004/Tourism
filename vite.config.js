@@ -8,7 +8,6 @@ export default defineConfig({
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.html']
   },
 
-
   // Configure Vite to exclude HTML files from JavaScript parsing
   // Additional build options if needed
   build: {
