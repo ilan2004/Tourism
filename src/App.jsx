@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import BookHero from './Components/Bookcomp/Hero/Hero';
 import Home from './Pages/Home';
 import Room from './Pages/Room';
+import VirtualPanoramaPage from './Components/Bookcomp/Options/room1/Reactroom';
 function App() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} /> {/* Render Home component as element prop */}
           <Route path="/Booking" element={<Room />} />
+          <Route path="/virtual" element={<VirtualPanoramaPage />} />
         </Routes>
         <Footer />
       </Router>
