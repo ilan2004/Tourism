@@ -1,6 +1,6 @@
 import React from 'react'
 import './BookCard.css'
-import content from '../room1/hotel1.html'
+// import content from '../room1/hotel1.html'
 const BookCard = ({ card_title,card_des,room_img,}) => {
   return (
     <div class="offer">
@@ -14,7 +14,7 @@ const BookCard = ({ card_title,card_des,room_img,}) => {
       <a href="#"class="show">View</a>
       <p class="card__description">{card_des}</p>
       <a href="#" class="card__button">Show prices</a>
-      <a href={content} class="card__vr">View in VR</a>
+      <a  class="card__vr">View in VR</a>
     </div>
   </div>
 </div>

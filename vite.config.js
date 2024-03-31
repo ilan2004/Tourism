@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.html']
   },
-  assetsInclude: ['**/*.html', '!index.html'],
+
 
   // Configure Vite to exclude HTML files from JavaScript parsing
   // Additional build options if needed
