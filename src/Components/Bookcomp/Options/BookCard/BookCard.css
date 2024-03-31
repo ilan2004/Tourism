@@ -6,10 +6,10 @@
     --dark-color-lighten: #f2f5ffc1;
     /*===== Fuente y tipografia =====*/
     --body-font: 'Poppins', sans-serif;
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 2.5rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --small-font-size: 1.3s;
   }
 
 
@@ -26,10 +26,9 @@ a {
   .container {
       height: auto; 
       align-items: center;
-      
       grid-column: auto;
       grid-row: auto;
-      
+      padding-top: 50px;
       
     }
     
@@ -170,3 +169,83 @@ a {
       padding: 20px; /* Add padding to create space around the cards */
   
   }
+  .lit{
+    font-size: x-large;
+    font-weight: bolder;
+  }
+.card__vr{
+  background-image: linear-gradient(rgba(48, 71, 240 ), rgba(186, 23, 23 ));
+  color:#fff;
+}
+.card__button{
+  background-color: #25262A;
+  color:#E9EAEC
+
+}
+.eye{
+  background-color: #1a1a1a;
+  color:#E9EAEC;
+}
+@media (max-width: 768px){
+    .card {
+        width: 160px;
+        height: 350px;
+        background-image: linear-gradient(#451952, #AE445A);
+        border-radius: 1rem;
+        padding: 4rem 2rem 0;
+        color: var(--white-color);
+        overflow-y: hidden;
+        flex: 0 0 auto; /* Add this line */
+         /* Add margin to separate cards */
+         
+      }
+    .card__img {
+      position: absolute;
+      width: 120px;
+      filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+      border-radius: 8%;
+    }
+    .card__data {
+        transform: translateY(13.2rem);
+        text-align: center;
+      }
+      
+      .card__title {
+        font-size: var(--h1-font-size);
+        color: var(--first-color);
+        margin-bottom: .5rem;
+      }
+      
+      .show {
+        display: inline-block;
+        font-size: small;
+        font-weight: bolder;
+        margin-bottom: 1.25rem;
+        background-color:#E9EAEC;
+        color:black;
+        padding:3px 1px;
+        border-radius: 20%;
+      }
+      
+      .card__description {
+        font-size: var(--small-font-size);
+        text-align: initial;
+        margin-bottom: 1.25rem;
+        opacity: 0;
+      }
+      
+      .card__button,
+      .card__vr {
+        display: block;
+        width: max-content;
+        padding: 0.6rem 0.8rem;
+        background-color: var(--first-color);
+        color: black;
+        border-radius: .5rem;
+        font-weight: 500;
+        transition: .2s;
+        opacity: 0;
+        margin-top: 5px;
+      }
+
+}
