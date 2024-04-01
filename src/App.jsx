@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbars from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
@@ -14,7 +14,7 @@ function App() {
     // Simulate content loading with a timeout
     const timer = setTimeout(() => {
       setContentLoaded(true);
-    }, 2000); // Adjust the timeout as needed
+    }, 5000); // Adjust the timeout as needed
 
     // Clear the timer when the component unmounts
     return () => clearTimeout(timer);
@@ -23,20 +23,23 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <Navbars />
         {!contentLoaded ? (
           <Loader /> // Show loader while content is loading
         ) : (
-          <Routes>
-            <Route exact path="/" element={<Home />} /> {/* Render Home component as element prop */}
-            <Route path="/Booking" element={<Room />} />
-            <Route path="/virtual" element={<VirtualPanoramaPage />} />
-          </Routes>
+          <>
+            <Navbars />
+            <Routes>
+              <Route exact path="/" element={<Home />} /> {/* Render Home component as element prop */}
+              <Route path="/Booking" element={<Room />} />
+              <Route path="/virtual" element={<VirtualPanoramaPage />} />
+            </Routes>
+            <Footer />
+          </>
         )}
-        <Footer />
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;
+
