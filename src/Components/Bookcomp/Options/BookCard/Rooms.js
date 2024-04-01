@@ -14,18 +14,19 @@ let Rooms =
     card_title:'Hotel Miyami',
     card_des:'Book hotels at cheap rate',
     room_img:room1,
-    redirect: 'Git\Tourism\src\Components\Bookcomp\Options\room1\index.html'
+    redirect: "/room1/hotel1.html"
     },
     {
     card_title:'Hotel barca',
     card_des:'Book hotels at cheap rate',
     room_img:room2,
-    redirect: '"Git\Tourism\src\Components\Bookcomp\Options\room1\index.html"'
+    redirect: "/room2/index.html"
     },
     {
     card_title:'Hotel real',
     card_des:'Book hotels at cheap rate',
-    room_img:room3
+    room_img:room3,
+    redirect: "/room3/index.html"
     },
     {
         card_title:'Hotel united',

@@ -53,6 +53,9 @@
         color: transparent;
     }
     .content a{
+        text-decoration: none;
+    }
+    .explore{
         text-decoration:none;
         display:inline-block;
         color:#fff;
@@ -79,7 +82,7 @@
             font-weight: 600;
             transition: 3s;
         }
-        .content a{
+        .explore{
             text-decoration:none;
             display:inline-block;
             color:#fff;
