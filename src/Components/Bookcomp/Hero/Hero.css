@@ -12,11 +12,11 @@ body
     padding:0 5%;
     display:flex;
     align-items: center;
-    color:#201212;
+    color:#fff;
    background-image: linear-gradient(rgba(245, 57, 16,0.3),rgba(245, 57, 16,0.3));
 }
 .js{
-    font-weight: 500;
+
 }
 .kind{
     width:500px;

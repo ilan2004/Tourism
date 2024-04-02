@@ -16,3 +16,16 @@
         padding: 0px;
     }
 }
+@media (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+}
+.mobile{
+    display: none;
+}
+@media (max-width: 768px){
+    .mobile{
+        display:block;
+    }
+}
