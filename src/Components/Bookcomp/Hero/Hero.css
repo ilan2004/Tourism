@@ -11,6 +11,7 @@ body
     position:relative;
     padding:0 5%;
     display:flex;
+    justify-content: center;
     align-items: center;
     color:#fff;
    background-image: linear-gradient(rgba(245, 57, 16,0.3),rgba(245, 57, 16,0.3));
@@ -21,17 +22,19 @@ body
 
 }
 .kind{
-    width:500px;
+    width:800px;
+    text-align: center;
 }
 .edit{
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 7rem;
+    font-weight: 500;
 }
 .be{
     position:absolute;
     right:0;
     bottom:0;
     z-index: -1;
+    opacity: 0.6;
 }
 @media (min-aspect-ratio: 16/9){
     .be{
@@ -48,12 +51,11 @@ body
 
 }
 @media (max-width: 768px){
-
-    .be{
+    .be {
         width: 100%;
-        height:50%;
-        position:absolute;
-        display: flex;
-        z-index: -1;
-    }
+        height: 100%;
+        object-fit: cover; /* Ensure the video covers the entire container */
+        object-position:center;  /* Align to the left */
+      }
+
 }
