@@ -12,14 +12,14 @@
             position: relative;
             height: 100%;
             width: 100%;
-            background-color: black;
+            background-color: #333333;
         }
     }
     .transition-background{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: black;
+        background-color: #333333;
         z-index: 1;
         pointer-events: none;
         top: 0;

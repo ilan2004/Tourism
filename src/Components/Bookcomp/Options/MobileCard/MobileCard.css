@@ -71,7 +71,8 @@ body {
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(rgba(48, 71, 240 ), rgba(186, 23, 23 ));
+  
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
   border-radius: 20px;
   transform: translateX(-80px);
@@ -85,7 +86,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(rgba(48, 71, 240 ), rgba(186, 23, 23 ));
   border-radius: 20px;
 
 }
@@ -159,7 +160,8 @@ body {
 
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image:linear-gradient(#1D1A39,#662549 );
+  color:#fff;
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;

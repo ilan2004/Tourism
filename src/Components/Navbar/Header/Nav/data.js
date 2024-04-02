@@ -1,13 +1,11 @@
 export const links = [
     {
         title: "Home",
-        href: "/",
-        to: 'Home'
+        href: '/',
     },
     {
-        title: "About Us",
-        href: "/",
-        to: 'connect'
+        title: "RoomBooking",
+        href: "/Booking",
     },
     {
         title: "Services",

@@ -37,7 +37,6 @@ const BookHero = () => {
           className="js">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, debitis sapiente minima laudantium molestiae distinctio consectetur quisquam ?
         </motion.span>
-        <a href="#" className="we">READ MORE</a>
       </div>
     </div>
   );

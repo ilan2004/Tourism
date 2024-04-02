@@ -2,14 +2,13 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { links, footerLinks } from './data';
 import { perspective, slideIn } from "./anim";
-import { Link as ScrollLink } from 'react-scroll';
 const Nav = () => {
   return ( 
     <div className={styles.nav}>
        <div className={styles.body}>
         {
             links.map( (link, i) => {
-                const { title, href , to} = link;
+                const { title, href } = link;
                 return (
                     <div key={`b_${i}`} className={styles.linkContainer}>
                         
@@ -21,17 +20,11 @@ const Nav = () => {
                           animate="enter"
                           exit="exit"
                         >
-                            <ScrollLink
-                                to={to}
-                                spy={true} 
-                                 smooth={true} 
-                                offset={50} 
-                                duration={1200} 
-    >
-                            <a>
+                            
+                            <a href={href}>
                                 {title}
+                                
                             </a>
-                            </ScrollLink>
                         </motion.div>
                     
                     </div>

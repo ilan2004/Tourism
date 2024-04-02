@@ -47,6 +47,7 @@
         display: flex;
         flex-wrap: wrap;
         padding:10px;
+        height: auto;
         
     }
     .h33{
@@ -61,7 +62,7 @@
         padding: 50px;
         transition: all 0.3s ease;
         background-color: #333333;
-        height:400px;
+        height:auto;
         border-radius: 15px;
     }
 }
