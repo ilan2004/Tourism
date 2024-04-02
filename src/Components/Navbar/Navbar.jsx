@@ -1,6 +1,7 @@
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import { NavLink } from 'react-router-dom';
+import Header from './Header/index';
 const Navbars = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Navbars = () => {
           <li><NavLink to="/RentCar" activeClassName="active">Rent a Car</NavLink></li>
           <li><NavLink to="/AI" activeClassName="active">AI</NavLink></li>
         </ul>
+        <Header/>
       </nav>
     </>
   );
