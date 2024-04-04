@@ -93,3 +93,26 @@ body
     line-height: 2.9rem;
 
 }
+@media (max-width: 768px){
+    .herotext h1 {
+        font-size: 6rem;
+        text-transform: uppercase;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 5.9rem;
+    }
+    .herotext h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 2.9rem;
+    
+    }
+    .herotext{
+        position: absolute;
+        z-index: 1;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+    }
+}

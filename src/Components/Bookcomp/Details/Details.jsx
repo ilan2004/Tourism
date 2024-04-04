@@ -51,7 +51,7 @@ const Details = () => {
       }, 'a')
       .to(".contents", {
         delay: -0.5,
-        marginTop: "20%" // Adjust the marginTop for smaller screens
+        marginTop: "0%" // Adjust the marginTop for smaller screens
       }, 'a');
     }
 
@@ -72,7 +72,7 @@ const Details = () => {
       <div id="center">
         <div className="contents">
           <h4>HOTELS</h4>
-          <h3><i>Browse</i> the work that define a <i>movement</i> and created a craft.</h3>
+          <h3><i>Experience</i> Tomorrow Today: <i>Virtual Reality</i> Hotel Booking for Your Dream Getaway</h3>
           <div className="btn">
             <h5>ENTER GALLERY</h5>
           </div>
