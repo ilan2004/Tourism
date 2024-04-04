@@ -10,13 +10,13 @@ export const links = [
     {
         title: "Services",
         href: "/",
-        to: 'Services'
+  
 
     },
     {
         title: "Contact",
         href: "/",
-        to: 'connect'
+
     }
 ]
 

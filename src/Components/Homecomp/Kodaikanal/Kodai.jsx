@@ -6,7 +6,7 @@ import './Kodai.css'
     <div className='Kodai'>
         <div className="var">
         <video playsInline autoPlay loop muted className='woods'>
-                  <source src ={kodais} type="video/mp4"/>
+                  <source playsInline src ={kodais} type="video/mp4"/>
                 </video>
         </div>
     <div className="allcontent">

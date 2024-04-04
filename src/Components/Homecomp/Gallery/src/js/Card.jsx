@@ -5,7 +5,7 @@ const Card = ({video,tag}) => {
     <div className='Card'>
         <div class="portfolio-thumb">
           <video playsInline autoPlay loop muted className="img-responsive" alt="portfolio video">
-             <source src={video} type="video/mp4" />
+             <source playsInline src={video} type="video/mp4" />
           </video>
           <div class="portfolio-overlay">
             <h4>{tag}</h4>

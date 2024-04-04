@@ -43,7 +43,7 @@ const Hero = () => {
   return (
     <div className='Hero'>
       <video playsInline autoPlay loop muted className='back' >
-        <source src={main} type="video/mp4" />
+        <source playsInline src={main} type="video/mp4" />
       </video>
       <div ref={contentRef} className="content">
         <h1>WHETRIP</h1>
