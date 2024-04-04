@@ -43,6 +43,18 @@ const Details = () => {
         marginTop: "0%"
       });
 
+    // Media query for smaller screens
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      tl.to("#center", {
+        height: "100vh", // Adjust the height for smaller screens
+      }, 'a')
+      .to(".contents", {
+        delay: -0.2,
+        marginTop: "20%" // Adjust the marginTop for smaller screens
+      }, 'a');
+    }
+
     // Cleanup function
     return () => {
       tl.kill(); // Dispose timeline
