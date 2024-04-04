@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import Loader from './Components/Loader/Loader';
 import Home from './Pages/Home';
 import Room from './Pages/Room';
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import VirtualPanoramaPage from './Components/Bookcomp/Options/room1/Reactroom';
 import Curve from './Components/Layout/Curve';
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className='App'>
+           <ReactLenis root>
       <Router>
         <AnimatePresence mode='wait'> {/* Wrap the content with AnimatePresence */}
           {!contentLoaded ? (
@@ -42,6 +44,7 @@ function App() {
           )}
         </AnimatePresence>
       </Router>
+      </ReactLenis>
     </div>
   );
 }
