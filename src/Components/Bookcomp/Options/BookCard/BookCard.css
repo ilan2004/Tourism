@@ -42,7 +42,7 @@ a {
        /* Add margin to separate cards */
        
     }
-  .card__img {
+  .card__imgs {
     position: absolute;
     width: 260px;
     filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
@@ -97,7 +97,7 @@ a {
     box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
   }
   
-  .card__img, 
+  .card__imgs, 
   .card__data, 
   .card__title, 
   .show, 
@@ -106,7 +106,7 @@ a {
   }
   
   /* Hover card effect */
-  .card:hover .card__img {
+  .card:hover .card__imgs {
     transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
   }
   
@@ -193,7 +193,7 @@ a {
          /* Add margin to separate cards */
          
       }
-    .card__img {
+    .card__imgs {
       position: absolute;
       width: 120px;
       filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));

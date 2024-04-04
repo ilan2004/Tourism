@@ -64,7 +64,7 @@ const BookCard = ({ card_title, card_des, room_img, redirect }) => {
           <motion.img
             src={room_img}
             alt=""
-            className="card__img"
+            className="card__imgs"
             variants={imgVariants}
             initial="hidden"
             animate={imgControls}

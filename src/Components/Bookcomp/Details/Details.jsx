@@ -50,7 +50,7 @@ const Details = () => {
         height: "100vh", // Adjust the height for smaller screens
       }, 'a')
       .to(".contents", {
-        delay: -0.2,
+        delay: -0.5,
         marginTop: "20%" // Adjust the marginTop for smaller screens
       }, 'a');
     }

@@ -4,13 +4,18 @@
 	position: relative;
     text-align: center;
     margin-right: 0px;
-
+    display: flex;
+    gap:10px;
+    flex-direction: column ;
+    
 }
 
 .Help {
 	color: white;
 	font-size: 5rem;
     text-align: center;
+    line-height: 4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 
@@ -19,6 +24,8 @@
 	font-weight: 300;
 	margin-bottom: 25px;
     color: white;
+    line-height: 4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .Subscribe-box{
 	display: inline-block;
@@ -29,6 +36,8 @@
     color:#fff;
     transition:1s;
     border-radius: 91px;
+    line-height: 3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .Subscribe-box:hover,
 .Subscribe-box:focus {
@@ -45,14 +54,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
- 
-    
+        gap:10px;
     }
     
     .Help {
         color: white;
         font-size: 2.6rem;
         text-align: center;
+        line-height: 0.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     
     
@@ -61,6 +71,8 @@
         font-weight: 300;
         margin-bottom: 25px;
         color:white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 0.5rem;
     }
     .Subscribe-box{
         padding: 20px 30px;
@@ -71,10 +83,17 @@
         color:#fff;
         transition:1s;
         border-radius: 91px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 0.5rem;
+        
     }
     .Subscribe-box:hover,
     .Subscribe-box:focus {
         color:#1a1a1a;
         background: white;	
     }
+}
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
 }
