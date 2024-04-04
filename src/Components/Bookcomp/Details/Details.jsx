@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Details.css';
-import Options from '../Options/Options';
 
 // Initialize ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 const Details = () => {
   useEffect(() => {
+    // Define GSAP timeline
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#main",
@@ -19,73 +19,58 @@ const Details = () => {
       }
     });
 
-    const updateAnimationForViewport = () => {
-      const windowWidth = window.innerWidth;
-
-      const centerHeight = windowWidth > 768 ? "100vh" : "50vh";
-      const topPosition = windowWidth > 768 ? "-50%" : "-25%";
-      const bottomPosition = windowWidth > 768 ? "-50%" : "-25%";
-      const topH1Position = windowWidth > 768 ? "60%" : "30%";
-      const bottomH1Position = windowWidth > 768 ? "-30%" : "-15%";
-
-      tl.to("#center", {
-        height: centerHeight,
-      }, 'a')
+    // Add animations to timeline
+    tl.to("#center", {
+      height: "100vh",
+    }, 'a')
       .to("#top", {
-        top: topPosition,
+        top: "-50%",
       }, 'a')
       .to("#bottom", {
-        bottom: bottomPosition,
+        bottom: "-50%",
       }, 'a')
       .to("#top-h1", {
-        top: topH1Position,
+        top: "60%"
       }, 'a')
       .to("#bottom-h1", {
-        bottom: bottomH1Position,
+        bottom: "-30%"
       }, 'a')
-      .to("#center-h2", {
-        top: bottomH1Position,
+      .to("#center-h1", {
+        top: "-30%"
       }, 'a')
       .to(".contents", {
         delay: -0.2,
         marginTop: "0%"
       });
-    };
 
-    updateAnimationForViewport();
-
-    const resizeHandler = () => {
-      updateAnimationForViewport();
-    };
-
-    window.addEventListener("resize", resizeHandler);
-
+    // Cleanup function
     return () => {
-      window.removeEventListener("resize", resizeHandler);
-      tl.kill();
+      tl.kill(); // Dispose timeline
     };
-  }, []);
+  }, []); // Empty dependency array ensures this effect runs only once on mount
 
   return (
-    <div className='details'>
-      <div id="main">
-        <div className='top' id="top">
-          <h1 id="top-h1">HOTELS</h1>
-        </div>
-        <div id="center">
-          <div className="contents">
-            <h4>HOTELS</h4>
-            <h3><i>"Experience</i> Tomorrow Today: <i>Virtual Reality</i> Hotel Booking for Your Dream Getaway</h3>
-            <div className="btn">
-              <h5>Book Now</h5>
-            </div>
-            <h2>(17)</h2>
+    <div className="details">
+
+
+    <div id="main">
+      <div id="top">
+        <h1 id="top-h1">HOTELS</h1>
+      </div>
+      <div id="center">
+        <div className="contents">
+          <h4>HOTELS</h4>
+          <h3><i>Browse</i> the work that define a <i>movement</i> and created a craft.</h3>
+          <div className="btn">
+            <h5>ENTER GALLERY</h5>
           </div>
-        </div>
-        <div id="bottom">
-          <h1 id="bottom-h1">HOTELS</h1>
+          <h2>(17)</h2>
         </div>
       </div>
+      <div id="bottom">
+        <h1 id="bottom-h1">HOTELS</h1>
+      </div>
+    </div>
     </div>
   );
 };
