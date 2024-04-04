@@ -28,7 +28,7 @@
     background-color: rgb(61, 61, 61);
 }
 
-#main{
+.details #main{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -85,7 +85,7 @@
     color: #fff;
 }
 
-.content{
+.contents{
     margin-top: 100vh;
     display: flex;
     flex-direction: column;
@@ -97,13 +97,13 @@
     gap: 4vh;
 }
 
-.content h4{
+.contents h4{
     font-size: 1vw;
     font-family: Founder;
     color: #fff;
 }
 
-.content h3{
+.contents h3{
     width: 22%;
     font-size: 3vw;
     font-family: CardinalR;
@@ -112,7 +112,7 @@
     color: #fff;
 }
 
-.content .btn{
+.contents .btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +124,7 @@
     font-family: Founder;
 }
 
-.content h2{
+.contents h2{
     font-size: 15vw;
     font-family: Founder;
 }
@@ -153,7 +153,7 @@
         background-image: radial-gradient(circle at center center, rgb(2, 0, 5) 50%, rgb(93, 60, 152) 100%);
         overflow: hidden;
     }
-    .content{
+    .contents{
         margin-top: 100vh;
         display: flex;
         flex-direction: column;
@@ -168,22 +168,22 @@
         font-size: 40vw;
     }
 
-    .content h4 {
+    .contents h4 {
         font-size: 3vw;
     }
 
-    .content h3 {
+    .contents h3 {
         width: 60%;
         font-size: 6vw;
     }
 
-    .content .btn {
+    .contents .btn {
         width: 20vw;
         height: 6vw;
         font-size: 2vw;
     }
 
-    .content h2 {
+    .contents h2 {
         font-size: 30vw;
     }
 }

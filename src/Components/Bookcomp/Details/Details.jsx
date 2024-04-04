@@ -46,7 +46,7 @@ const Details = () => {
       .to("#center-h2", {
         top: bottomH1Position,
       }, 'a')
-      .to(".content", {
+      .to(".contents", {
         delay: -0.2,
         marginTop: "0%"
       });
@@ -73,7 +73,7 @@ const Details = () => {
           <h1 id="top-h1">HOTELS</h1>
         </div>
         <div id="center">
-          <div className="content">
+          <div className="contents">
             <h4>HOTELS</h4>
             <h3><i>"Experience</i> Tomorrow Today: <i>Virtual Reality</i> Hotel Booking for Your Dream Getaway</h3>
             <div className="btn">
