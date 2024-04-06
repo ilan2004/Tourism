@@ -37,7 +37,7 @@
     top: 0%;
     width: 100%;
     height: 50vh;
-    background-color:rgb(61, 61, 61);
+    background-color:rgb(6, 1, 1);
     z-index: 9;
     overflow: hidden;
 }
@@ -57,7 +57,7 @@
     bottom: 0;
     width: 100%;
     height: 50vh;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(6, 1, 1);
     overflow: hidden;
 }
 
@@ -120,6 +120,15 @@
     font-family: Founder;
 }
 @media (max-width: 768px){
+    #center{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        transform-origin: center;
+        background-image: radial-gradient(circle at center center, rgb(93, 60, 152),rgb(10, 3, 9));
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+        overflow: hidden;
+    }
 
     #bottom-h1{
         display: none;
@@ -175,5 +184,13 @@
         height: 100vh;
         color: #fff;
         gap: 4vh;
+    }
+    #bottom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(10, 7, 16);
+        overflow: hidden;
     }
 }
