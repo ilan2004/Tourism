@@ -9,6 +9,7 @@ import Room from './Pages/Room';
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import VirtualPanoramaPage from './Components/Bookcomp/Options/room1/Reactroom';
 import Curve from './Components/Layout/Curve';
+import Car from './Pages/Car';
 function App() {
   const [contentLoaded, setContentLoaded] = useState(false);
 
@@ -37,7 +38,7 @@ function App() {
                 <Route exact path="/" element={<Home />} />
 
                 <Route path="/Booking" element={<Room />} />
-                <Route path="/virtual" element={<VirtualPanoramaPage />} />
+                <Route path="/RentCar" element={<Car />} />
               </Routes>
               <Footer />
             </>

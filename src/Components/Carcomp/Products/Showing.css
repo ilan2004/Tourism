@@ -1,0 +1,32 @@
+.Options{
+    color:#fff;
+    padding: 50px;
+}
+@media (max-width: 768px){
+    .Options{
+        background-image:linear-gradient(#1D1A39,#662549 );
+        color:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+}
+.desktop{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+}
+.mobile{
+    display: none;
+}
+@media (max-width: 768px){
+    .mobile{
+        display:block;
+    }
+}

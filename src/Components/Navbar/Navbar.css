@@ -30,7 +30,7 @@ nav {
     gap: 10px;  
 }
 .label{
-    top:10px;
+    bottom:20px;
     position: relative;
     font-size: x-large;
 }

@@ -1,0 +1,129 @@
+.carhero {
+    /* Define your styles specific to the Carhero component here */
+    --bg: #0f0f0f;
+    --text: #a5a4a5;
+}
+
+@font-face {
+    font-family: schabo;
+    src: url(./SCHABO-Condensed.woff);
+}
+.carhero body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Neue Montreal";
+}
+
+.carhero .bubbles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 560px;
+    background: url(./cobra.png) no-repeat ;
+    background-size: cover;
+    mix-blend-mode: difference;
+    transform-origin: center;
+}
+.carhero h1 {
+    padding-left: 40px;
+    font-family: schabo;
+    font-size: 240px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    color:var(--text);
+    position: absolute;
+    top: 10px;
+    left:0px;
+    width:900px;
+}
+.headers{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.carhero p {
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.carhero .heros {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.carhero .heros > div {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 5rem 5rem 5rem;
+}
+.carhero .heros .header {
+    flex: 3;
+}
+.carhero .copy {
+    flex: 2;
+}
+.both{
+    width:100px;
+    height: 200px;;
+}
+
+.action{
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    width: 100vw;
+    height: 300px;;
+    flex-direction: column;
+}
+.both{
+    position: relative;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content:space-between;
+    gap: 10px;
+    opacity: 0.7;
+}
+.media1{
+    height:300px;
+    width:200px;
+}
+.media2{
+    height:300px;
+    width:200px;
+}
+@media (max-width: 768px){
+    .carhero .bubbles {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        height: 40vh;
+        background: url(./cobra.png) no-repeat ;
+        background-size: cover;
+        mix-blend-mode: difference;
+        transform-origin: center;
+    }
+    .carhero h1 {
+        padding-left: 40px;
+        font-family: schabo;
+        font-size: 140px;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        color:var(--text);
+        position: absolute;
+        top: 10px;
+        left:0px;
+        width:100vw;
+    }
+
+}

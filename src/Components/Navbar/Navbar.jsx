@@ -12,10 +12,8 @@ const Navbars = () => {
         </label>
         <ul>
           <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-          <li><NavLink to="/about" activeClassName="active">Gallery</NavLink></li>
           <li><NavLink to="/Booking" activeClassName="active">Book a Room</NavLink></li>
           <li><NavLink to="/RentCar" activeClassName="active">Rent a Car</NavLink></li>
-          <li><NavLink to="/AI" activeClassName="active">AI</NavLink></li>
         </ul>
         <Header/>
       </nav>
