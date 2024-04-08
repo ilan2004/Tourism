@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion'; // Import AnimatePresence and motion
 import Navbars from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
@@ -7,9 +7,18 @@ import Loader from './Components/Loader/Loader';
 import Home from './Pages/Home';
 import Room from './Pages/Room';
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
-import VirtualPanoramaPage from './Components/Bookcomp/Options/room1/Reactroom';
-import Curve from './Components/Layout/Curve';
 import Car from './Pages/Car';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   const [contentLoaded, setContentLoaded] = useState(false);
 
@@ -25,31 +34,31 @@ function App() {
 
   return (
     <div className='App'>
-           <ReactLenis root>
-      <Router>
-        <AnimatePresence mode='wait'> {/* Wrap the content with AnimatePresence */}
-          {!contentLoaded ? (
-            <Loader key="loader" /> // Assign a unique key to Loader
-          ) : (
-            <>
-              <Navbars />
-              <Routes>
-
-                <Route exact path="/" element={<Home />} />
-
-                <Route path="/Booking" element={<Room />} />
-                <Route path="/RentCar" element={<Car />} />
-              </Routes>
-              <Footer />
-            </>
-          )}
-        </AnimatePresence>
-      </Router>
+      <ReactLenis root>
+        <Router>
+          <ScrollToTop /> {/* ScrollToTop component to handle scrolling */}
+          <AnimatePresence mode='wait'> {/* Wrap the content with AnimatePresence */}
+            {!contentLoaded ? (
+              <Loader key="loader" /> // Assign a unique key to Loader
+            ) : (
+              <>
+                <Navbars />
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route path="/Booking" element={<Room />} />
+                  <Route path="/RentCar" element={<Car />} />
+                </Routes>
+                <Footer />
+              </>
+            )}
+          </AnimatePresence>
+        </Router>
       </ReactLenis>
     </div>
   );
 }
 
 export default App;
+
 
 

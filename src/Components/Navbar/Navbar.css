@@ -21,6 +21,10 @@ nav {
     padding: 10px; /* Adjust padding for smaller screens */
   }
 }
+@font-face {
+    font-family:olde;
+    src: url(./OldschoolGrotesk-NormalLight.otf);
+}
 
 .logo{
     display: flex;
@@ -30,13 +34,18 @@ nav {
     gap: 10px;  
 }
 .label{
-    bottom:20px;
+    top:5px;
     position: relative;
     font-size: x-large;
+    font-family: olde;
+    transform: none!important;
+ 
 }
  nav ul{
     float:right;
     margin-right: 20px;
+    font-family: olde;
+    
 } 
 nav ul li{
     display:inline-block;
@@ -50,6 +59,7 @@ nav ul li a{
     transition: 0.5s;
     padding:8px;
     border-radius: 5px;
+    
 
     
 }
@@ -62,6 +72,7 @@ nav ul li a:hover{
 	transform: scale(1.0.5);
     border-color: transparent;
     border-radius: 5px;
+    text-decoration: none;
 
 
 

@@ -92,7 +92,6 @@ const Products = ({ card_title, card_des, car_img, redirect }) => {
                 {card_des}
               </motion.p>
               <a href="#" className="card__button">Show prices</a>
-              <a href={redirect} className="card__vr">View in VR</a>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import MobileCard from './MobileCard/MobileCard';
 const Options = () => {
   return (
     <div className="Options">
-      <div className="desktop">
+      {/* <div className="desktop">
       {Rooms.map((item, index) => (
         <BookCard
           key={index}
@@ -16,7 +16,7 @@ const Options = () => {
           redirect={item.redirect}
         />
       ))}
-      </div>
+      </div> */}
       <div className="mobile">
       {Rooms.map((item, index) => (
         <MobileCard

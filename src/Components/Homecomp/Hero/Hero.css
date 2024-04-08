@@ -8,6 +8,10 @@
    justify-content: center;
    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));   background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
 }
+@font-face {
+    font-family:cringe;
+    src: url(./KC+Cringe.otf);
+}
  .back{
     position:absolute;
     right:0;
@@ -42,11 +46,13 @@
         position: relative;
     }
     .content h1{
-        font-size: 15rem;
-        color:#fff;
-        font-weight: 600;
+        font-size: 20rem;
+     
+        color:#dcdcdc;
+        
         transition: 3s;
-        line-height: 11.9rem;
+        line-height: 18.9rem;
+        font-family:cringe;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .content h1:hover{
@@ -59,6 +65,8 @@
     .explore{
         text-decoration:none;
         display:inline-block;
+
+     
         color:#fff;
         font-size: 2.5rem;
         border: 2px solid #fff;

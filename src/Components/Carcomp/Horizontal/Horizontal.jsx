@@ -11,7 +11,7 @@ const Horizontal = () => {
     const getScrollAmount = () => {
       let racesWidth = races.scrollWidth;
       let windowWidth = window.innerWidth;
-      return -(racesWidth - windowWidth);
+      return -(racesWidth - windowWidth)  ;
     };
 
     const tween = gsap.to(races, {
@@ -45,11 +45,11 @@ const Horizontal = () => {
       const getScrollAmount = () => {
         let racesWidth = races.scrollWidth;
         let windowWidth = window.innerWidth;
-        return -(racesWidth - windowWidth);
+        return -(racesWidth - windowWidth) / 2;
       };
 
       gsap.set(races, { clearProps: 'x' }); // Clear previous x position
-      tween.vars.x = getScrollAmount(); // Update tween x value
+      tween.vars.x = getScrollAmount() / 2; // Update tween x value
       ScrollTrigger.refresh(); // Refresh ScrollTrigger
     };
 
@@ -65,13 +65,13 @@ const Horizontal = () => {
     const isMobile = window.innerWidth < 768; // Assuming mobile breakpoint is 768px
     if (isMobile) {
       ScrollTrigger.getAll().forEach(trigger => {
-        trigger.end = `+=${window.innerWidth * 10}`;
+        trigger.end = `+=${window.innerWidth /2}`;
       });
     }
   }, []);
 
   return (
-    <div>
+    <div className='Horizontal'>
       {/* <div className="space-50vh lightBG"></div> */}
       <div className="racesWrapper">
         <div className="races" ref={racesRef}>

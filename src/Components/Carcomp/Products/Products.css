@@ -38,7 +38,6 @@
   .container {
       height: auto; 
       align-items: center;
-      
       grid-column: auto;
       grid-row: auto;
       
@@ -49,13 +48,14 @@
     .card {
       width: 320px;
       height: 400px;
+      background-color:#4a1614 ;
       background-image: linear-gradient(rgba(3, 0, 0 ), rgba(184, 30, 5 ));
       border-radius: 1rem;
       padding: 4rem 2rem 0;
       color: var(--white-color);
-      overflow-y: hidden;
-      flex: 0 0 auto; /* Add this line */
-       /* Add margin to separate cards */
+      border:none;
+      flex: 0 0 auto; 
+
        
     }
   .card__img {
@@ -123,7 +123,7 @@
   
   /* Hover card effect */
   .card:hover .card__img {
-    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg) !important;;
   }
   
   .card:hover .card__data {
@@ -149,22 +149,9 @@
   .book{
       background-color: #000000;
   }
-  .container felx_space{
-      background-color: white;
-      .offer {
-          display: inline-block;
-        }
-        
-  }
+     
   /* Apply flexbox to the .offer-container */
-  .offer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background-color: var(--dark-color-lighten);
-      padding: 20px; /* Add padding to create space around the cards */
-      background-image: linear-gradient(rgba(229, 35, 4 ), rgba(25, 24, 24 ));
-    }
+
     
     .offer {
       flex: 0 0 calc(10% - 40px); /* Adjust the width and spacing as needed */
@@ -174,12 +161,8 @@
     .card {
       box-shadow: 0 0 10px black;
     }
-  .offer-container2{
-      background-image: linear-gradient(rgba(25, 24, 24), rgba(229, 35, 4  ));
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background-color: var(--dark-color-lighten);
-      padding: 20px; /* Add padding to create space around the cards */
+    .Showing{
+        padding: 40px;;
+        background-image: linear-gradient(rgba(229, 35, 4 ), rgba(25, 24, 24 ));
+    }
   
-  }

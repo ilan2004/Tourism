@@ -17,14 +17,8 @@
     display: flex;
     flex-wrap: wrap;
 }
-@media (max-width: 768px){
-    .desktop{
-        display: none;
-    }
-}
-.mobile{
-    display: none;
-}
+
+
 @media (max-width: 768px){
     .mobile{
         display:block;

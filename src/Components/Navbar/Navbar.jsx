@@ -2,7 +2,14 @@ import './Navbar.css';
 import logo from '../../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import Header from './Header/index';
+import { useEffect } from 'react';
+
 const Navbars = () => {
+  // Scroll to the top whenever the component is rendered
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <nav className="whetrip">
@@ -22,3 +29,4 @@ const Navbars = () => {
 }
 
 export default Navbars;
+

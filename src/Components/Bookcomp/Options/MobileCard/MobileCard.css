@@ -5,10 +5,19 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.mobile{
+  display: flex;
+  flex-wrap: wrap;
+  gap:100px;
+  padding: 50px;
+}
+.MobileCard{
+  padding: 20px;
+
+}
 .blog-slider {
-  width: 95%;
+  width: 110%;
   position: relative;
-  max-width: 800px;
   margin: auto;
   background: #fff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
@@ -16,7 +25,8 @@ body {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
-
+  max-width: 880px;
+  height: 400px;
 }
 
 @media screen and (max-width: 992px) {
@@ -263,3 +273,9 @@ body {
     gap: 10px;
     padding-bottom: 15px;
 }
+
+/* .blog-slider__item {
+  display: flex;
+  align-items: center;
+  gap:200px;
+} */
