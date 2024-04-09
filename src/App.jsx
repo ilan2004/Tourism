@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion'; // Import AnimatePresence and motion
 import Navbars from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Loader from './Components/Loader/Loader';
-import Home from './Pages/Home';
-import Room from './Pages/Room';
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
-import Car from './Pages/Car';
+
+// Lazy load the components for each route
+const Home = React.lazy(() => import('./Pages/Home'));
+const Room = React.lazy(() => import('./Pages/Room'));
+const Car = React.lazy(() => import('./Pages/Car'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,19 +40,21 @@ function App() {
         <Router>
           <ScrollToTop /> {/* ScrollToTop component to handle scrolling */}
           <AnimatePresence mode='wait'> {/* Wrap the content with AnimatePresence */}
-            {!contentLoaded ? (
-              <Loader key="loader" /> // Assign a unique key to Loader
-            ) : (
-              <>
-                <Navbars />
-                <Routes>
-                  <Route exact path="/" element={<Home />} />
-                  <Route path="/Booking" element={<Room />} />
-                  <Route path="/RentCar" element={<Car />} />
-                </Routes>
-                <Footer />
-              </>
-            )}
+            <Suspense fallback={<Loader />}>
+              {!contentLoaded ? (
+                <Loader key="loader" /> // Assign a unique key to Loader
+              ) : (
+                <>
+                  <Navbars />
+                  <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/Booking" element={<Room />} />
+                    <Route path="/RentCar" element={<Car />} />
+                  </Routes>
+                  <Footer />
+                </>
+              )}
+            </Suspense>
           </AnimatePresence>
         </Router>
       </ReactLenis>
@@ -59,6 +63,3 @@ function App() {
 }
 
 export default App;
-
-
-
