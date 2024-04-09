@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion'; // Import AnimatePresence and motion
+import { AnimatePresence } from 'framer-motion'; // Only import AnimatePresence from framer-motion
 import Navbars from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Loader from './Components/Loader/Loader';
-import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 // Lazy load the components for each route
 const Home = React.lazy(() => import('./Pages/Home'));
@@ -38,21 +38,17 @@ function App() {
     <div className='App'>
       <ReactLenis root>
         <Router>
-          <ScrollToTop /> {/* ScrollToTop component to handle scrolling */}
-          <AnimatePresence mode='wait'> {/* Wrap the content with AnimatePresence */}
+          <ScrollToTop />
+          <AnimatePresence mode='wait'> {/* Use exitBeforeEnter for better animation */}
             <Suspense fallback={<Loader />}>
               {!contentLoaded ? (
-                <Loader key="loader" /> // Assign a unique key to Loader
+                <Loader key="loader" />
               ) : (
-                <>
-                 
-                  <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/Booking" element={<Room />} />
-                    <Route path="/RentCar" element={<Car />} />
-                  </Routes>
-
-                </>
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route path="/Booking" element={<Room />} />
+                  <Route path="/RentCar" element={<Car />} />
+                </Routes>
               )}
             </Suspense>
           </AnimatePresence>

@@ -9,24 +9,23 @@ import Login from '../Components/Homecomp/Login/Login';
 import Stairs from '../Components/Layout/Stairs';
 import Navbars from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
+
 const Home = () => {
   return (
-    <>
     <Stairs>
       <div>
-      <Navbars />
-        <Hero/>
-        <Newsletter/>
-        <Gallery/>
-        <Transport/>
-        <Kodai/>
-        <VRroom/>
-        <Login/>
+        <Navbars />
+        <Hero />
+        <Newsletter />
+        <Gallery />
+        <Transport />
+        <Kodai />
+        <VRroom />
+        <Login />
         <Footer />
       </div>
-      </Stairs>
-    </>
+    </Stairs>
   );
 };
 
-export default Home; // Check how you're using the Transition component
+export default Home;
