@@ -1,18 +1,18 @@
 import React from 'react'
-import { Audio } from 'react-loader-spinner'
+import { Triangle } from 'react-loader-spinner'
 import './Loader.css'
  const Loader = () => {
   return (
     <div className='Loader'>
-        <Audio
-         height="80"
-         width="80"
-        radius="9"
-        color="green"
-        ariaLabel="three-dots-loading"
-        wrapperStyle
-        wrapperClass
-/>
+        <Triangle
+  visible={true}
+  height="80"
+  width="80"
+  color="#4fa94d"
+  ariaLabel="triangle-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  />
     </div>
   )
 }

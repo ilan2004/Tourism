@@ -17,7 +17,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 768px){
     .mobile{

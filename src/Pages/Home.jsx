@@ -7,12 +7,14 @@ import Kodai from '../Components/Homecomp/Kodaikanal/Kodai';
 import VRroom from '../Components/Homecomp/VRroom/VRroom';
 import Login from '../Components/Homecomp/Login/Login';
 import Stairs from '../Components/Layout/Stairs';
-
+import Navbars from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
 const Home = () => {
   return (
     <>
     <Stairs>
       <div>
+      <Navbars />
         <Hero/>
         <Newsletter/>
         <Gallery/>
@@ -20,6 +22,7 @@ const Home = () => {
         <Kodai/>
         <VRroom/>
         <Login/>
+        <Footer />
       </div>
       </Stairs>
     </>

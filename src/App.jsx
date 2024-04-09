@@ -45,13 +45,13 @@ function App() {
                 <Loader key="loader" /> // Assign a unique key to Loader
               ) : (
                 <>
-                  <Navbars />
+                 
                   <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route path="/Booking" element={<Room />} />
                     <Route path="/RentCar" element={<Car />} />
                   </Routes>
-                  <Footer />
+
                 </>
               )}
             </Suspense>
