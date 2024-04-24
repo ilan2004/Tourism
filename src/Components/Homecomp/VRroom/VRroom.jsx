@@ -1,6 +1,7 @@
 import React from 'react'
 import './VRroom.css'
 import Vrroomimg from '../../../assets/vrroom.png';
+import { Link } from 'react-router-dom';
  const VRroom = () => {
   return (
     <div className='VRroom'>
@@ -11,11 +12,13 @@ import Vrroomimg from '../../../assets/vrroom.png';
             <p>
                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, in natus quibusdam quos reprehenderit laudantium adipisci veniam, expedita magni, iure perspiciatis. Quam praesentium iste sunt ex, laborum laboriosam impedit quo.
             </p>
-            <button className='see'>
-                <a >
+            <Link to='/Booking'>  <button className='see'>
+               <a >
                     See More
                 </a>
+                
             </button>
+            </Link>
         </div>
     <img className='Vrimg' src={Vrroomimg} />
     </div>

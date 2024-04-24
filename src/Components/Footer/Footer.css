@@ -5,4 +5,14 @@
     background:#1a1a1a;
     color:#999;
     flex-direction:column;
+    padding:80px;
+    gap:20px;
+}
+.mit{
+    display: flex;
+    flex-direction: column;
+}
+.foot-log{
+    left: 20px;
+    position: relative;
 }

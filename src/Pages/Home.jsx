@@ -12,7 +12,7 @@ import Footer from '../Components/Footer/Footer';
 
 const Home = () => {
   return (
-    <Stairs>
+ 
       <div>
         <Navbars />
         <Hero />
@@ -24,7 +24,6 @@ const Home = () => {
         <Login />
         <Footer />
       </div>
-    </Stairs>
   );
 };
 
