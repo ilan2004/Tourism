@@ -6,7 +6,7 @@ import './Details.css';
 // Initialize ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-const Details = () => {
+const Details = ({ redirect }) => {
   useEffect(() => {
     // Define GSAP timeline
     const tl = gsap.timeline({
@@ -76,7 +76,7 @@ const Details = () => {
           <h4>HOTELS</h4>
           <h3><i>Experience</i> Tomorrow Today: <i>Virtual Reality</i> Hotel Booking for Your Dream Getaway</h3>
           <div className="btn">
-            <h5>ENTER GALLERY</h5>
+            <h5 href={redirect}>ENTER GALLERY</h5>
           </div>
           <h2>(17)</h2>
         </div>
