@@ -28,7 +28,7 @@ function App() {
     // Simulate content loading with a timeout
     const timer = setTimeout(() => {
       setContentLoaded(true);
-    }, 5000); // Adjust the timeout as needed
+    }, 4000); // Adjust the timeout as needed
 
     // Clear the timer when the component unmounts
     return () => clearTimeout(timer);

@@ -39,7 +39,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div ref={newsletterRef} className='Newsletter'>
+    <div className='Newsletter'>
       <h2 class="Help">We are here to help you?</h2>
       <p class="Subscribe">Subscribe to get our newsletters</p>
 

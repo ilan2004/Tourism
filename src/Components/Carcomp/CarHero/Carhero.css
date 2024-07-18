@@ -11,8 +11,8 @@
 .carhero body {
     width: 100vw;
     height: 100vh;
-    background: var(--bg);
-    color: var(--text);
+    background-color: #0f0f0f;
+    color: #a5a4a5;
     font-family: "Neue Montreal";
 }
 

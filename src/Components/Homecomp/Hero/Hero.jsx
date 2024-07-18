@@ -45,7 +45,7 @@ const Hero = () => {
       <video playsInline autoPlay loop muted className='back' >
         <source playsInline src={main} type="video/mp4" />
       </video>
-      <div ref={contentRef} className="content">
+      <div className="content">
         <h1>WHETRIP</h1>
         <NavLink to="/Booking">
           <a className="explore">Explore</a>

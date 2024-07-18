@@ -59,11 +59,11 @@ const BookHero = () => {
     <div className='BookHero'>
       <div className="herotext">
         {/* Apply the ref to the h1 element */}
-        <h1 ref={h1Ref}>
+        <h1 >
           VR HOTEL BOOKING
         </h1>
         {/* Apply the ref to the h2 element */}
-        <h2 ref={h2Ref}>
+        <h2 >
           Booking Hotels Made Easier
         </h2>
       </div>
