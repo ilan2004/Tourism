@@ -26,32 +26,37 @@ let Rooms =
     card_title:'Hotel real',
     card_des:'Book hotels at cheap rate',
     room_img:room3,
-    redirect: "/room3/index.html"
+    redirect: "/room1/hotel1.html"
     },
     {
         card_title:'Hotel united',
         card_des:'Book hotels at cheap rate',
-        room_img:room4
+        room_img:room4,
+        redirect: "/room2/index.html"
         },
         {
         card_title:'City Hotel',
         card_des:'Book hotels at cheap rate',
-        room_img:room5
+        room_img:room5,
+        redirect: "/room1/index.html"
         },
         {
         card_title:'Hotel pool',
         card_des:'Book hotels at cheap rate',
-        room_img:room6
+        room_img:room6,
+        redirect: "/room2/index.html"
         },
         {
             card_title:'Hotel Arsenal',
             card_des:'Book hotels at cheap rate',
-            room_img:room7
+            room_img:room7,
+            redirect: "/room2/index.html"
             },
             {
             card_title:'Hotel Ham',
             card_des:'Book hotels at cheap rate',
-            room_img:room8
+            room_img:room8,
+            redirect: "/room1/index.html"
             },
  
 ]
