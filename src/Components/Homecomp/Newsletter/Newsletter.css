@@ -4,37 +4,45 @@
 	position: relative;
     text-align: center;
     margin-right: 0px;
-    padding-right: 0px;
-
+    display: flex;
+    gap:10px;
+    flex-direction: column ;
+    align-items: center;
+    
 }
 
 .Help {
 	color: white;
-	font-size: 3rem;
+	font-size: 5rem;
     text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 
 .Subscribe{
-	font-size: 1rem;
+	font-size: 2.5rem;
 	font-weight: 300;
 	margin-bottom: 25px;
     color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .Subscribe-box{
 	display: inline-block;
 	padding: 10px 25px;
+    width:30%;
 	border: 2px solid transparent;
 	background:#1a1a1a;
 	text-transform: uppercase;
     color:#fff;
     transition:1s;
     border-radius: 91px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .Subscribe-box:hover,
 .Subscribe-box:focus {
 	color:#1a1a1a;
 	background: white;	
+    text-decoration: none;
 }
 @media (max-width: 768px){
 
@@ -46,36 +54,44 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
- 
-    
+        gap:10px;
     }
     
     .Help {
         color: white;
-        font-size: 1.5rem;
+        font-size: 2.6rem;
         text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     
     
     .Subscribe{
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300;
         margin-bottom: 25px;
         color:white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .Subscribe-box{
-        padding: 20px 30px;
-        font-size: 0.8rem;
+        width:50%;
+        font-size: 1.2rem;
+   
         border: 2px solid transparent;
         background:#1a1a1a;
         text-transform: uppercase;
         color:#fff;
         transition:1s;
         border-radius: 91px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        
     }
     .Subscribe-box:hover,
     .Subscribe-box:focus {
         color:#1a1a1a;
         background: white;	
     }
+}
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
 }

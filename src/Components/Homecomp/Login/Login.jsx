@@ -7,7 +7,7 @@ import pass from '../../../assets/password.svg';
 const Login = () => {
   return (
     <div className='login-back'>
-        <video autoPlay loop muted className='beach'>
+        <video playsInline autoPlay loop muted className='beach'>
             <source src ={loginv} type="video/mp4"/>
         </video>
         <form class="my-form" id="theform">

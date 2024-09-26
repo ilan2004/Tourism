@@ -1,29 +1,32 @@
+import './Navbar.css';
+import logo from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
+import Header from './Header/index';
+import { useEffect } from 'react';
 
+const Navbars = () => {
+  // Scroll to the top whenever the component is rendered
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-import './Navbar.css'
-import logo from  '../../assets/logo.png';
-const Navbars =() => {
   return (
     <>
-    <nav class="whetrip">
-      <label class="logo">
-        <img src={logo}
-        width="60px"
-        height="60px"/>
-      <p class="label">WHETRIP</p>
-      </label>
+      <nav className="whetrip">
+        <label className="logo">
+          <img src={logo} alt="Logo" width="60px" height="60px" />
+          <p className="label">WHETRIP</p>
+        </label>
         <ul>
-            <li><a class="active" href="#main">Home</a></li>
-            <li><a href="#about">gallery</a></li>
-            <li><a >Book a Room</a></li>
-            <li><a >Rent a car</a></li>
-            <li><a >AI</a></li>
-             
+          <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/Booking" activeClassName="active">Book a Room</NavLink></li>
+          <li><NavLink to="/RentCar" activeClassName="active">Rent a Car</NavLink></li>
         </ul>
-     </nav>
-
+        <Header/>
+      </nav>
     </>
   );
 }
 
 export default Navbars;
+

@@ -1,0 +1,153 @@
+body
+{
+    background-color: black;
+	color: #999;
+	font-family: 'Raleway', sans-serif; 
+    z-index: -1;
+}
+@font-face {
+    font-family: oldbold;
+    src: url(./OldschoolGrotesk-NormalExtraBold.otf);
+}
+@font-face {
+    font-family: oldregular;
+    src: url(./OldschoolGrotesk-NormalRegular.otf);
+}
+.BookHero{
+    width:100%;
+    background-color: black;
+    height:100vh;
+    position:relative;
+    padding:0 5%;
+    display:flex;
+   justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-image: radial-gradient(circle at center center, rgb(93, 60, 152) 0%, rgb(2, 0, 5) 50%);
+  
+  
+}
+.js{
+
+}
+.kind{
+    width:800px;
+    text-align: center;
+}
+.edit{
+    font-size: 7rem;
+    font-weight: 500;
+}
+.be{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    opacity: 0.6;
+}
+@media (min-aspect-ratio: 16/9){
+    .be{
+        width: 100%;
+        height:auto;
+    }
+}
+    @media (max-aspect-ratio: 16/9){
+        .be{
+            width: 100%;
+            height:100%;
+        }
+
+
+}
+@media (max-width: 768px){
+    .be {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the video covers the entire container */
+        object-position:center;  /* Align to the left */
+      }
+
+}
+
+@media (max-width: 768px){
+    .edit{
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .herotext{
+        position: absolute;
+        z-index: 1;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        top:100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .herotext h1 {
+ 
+        text-transform: uppercase;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        font-family: oldbold;
+        top:0px;
+        text-shadow: 200px 200px 100px #000;
+        padding-left: 30px;
+    }
+}
+.herotext h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    font-family: oldbold;
+    top:0px;
+    text-shadow: 200px 200px 100px #000;
+    
+}
+
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+.herotext{
+    position: absolute;
+    z-index: 1;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    top:100px;
+}
+.herotext h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 3.9rem;
+    font-family: oldregular;
+
+}
+@media (max-width: 768px){
+    .herotext h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        text-align: center;
+    }
+    .herotext h2{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        font-family: oldregular;
+    
+    }
+    .herotext{
+        position: absolute;
+        z-index: 1;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

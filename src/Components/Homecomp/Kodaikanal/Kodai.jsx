@@ -5,8 +5,8 @@ import './Kodai.css'
   return (
     <div className='Kodai'>
         <div className="var">
-        <video autoPlay loop muted className='woods'>
-                  <source src ={kodais} type="video/mp4"/>
+        <video playsInline autoPlay loop muted className='woods'>
+                  <source playsInline src ={kodais} type="video/mp4"/>
                 </video>
         </div>
     <div className="allcontent">

@@ -10,17 +10,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.104.1",
+    "@react-three/fiber": "^8.16.1",
+    "@studio-freight/react-lenis": "^0.0.46",
+    "@types/three": "^0.163.0",
     "bootstrap": "^5.3.3",
     "embla-carousel": "^8.0.0",
     "embla-carousel-auto-scroll": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
-    "framer-motion": "^11.0.22",
+    "framer-motion": "^11.0.24",
+    "gsap": "^3.12.5",
+    "panolens": "^0.12.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "sass": "^1.72.0",
+    "split-type": "^0.3.4",
+    "three": "^0.163.0",
+    "vite-plugin-markdown": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -30,6 +42,8 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "raw-loader": "^4.0.2",
+    "vite": "^5.2.0",
+    "vite-plugin-html": "^3.2.2"
   }
 }

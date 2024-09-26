@@ -24,3 +24,18 @@
     font-weight: bolder;
 
 }
+@media (max-width: 768px){
+    .VRroom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Vrimg{
+        width:300px;
+        height:150px;
+    }
+    .see{
+        background-color: #333333;
+        color:#fff;
+        padding: 10px 20px;
+    }
+}

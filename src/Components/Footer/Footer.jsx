@@ -7,7 +7,7 @@ const Footer = () => {
 
     <div className='Footer'>
         <label class="mit">
-              <img src={logo}
+              <img className='foot-log' src={logo}
               width="60px"
               height="60px"/>
               <p class="label">
