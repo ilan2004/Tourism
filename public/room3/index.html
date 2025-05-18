@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!--projecttitle--><title>WAKWAKKKKKKKKKroom3</title><!--projecttitle-end-->
+		<!--projecttitle--><title>room3</title><!--projecttitle-end-->
 		<!--projectdescription--><meta name="description" content="New 3Sixty Virtual Tour Project"><!--projectdescription-end-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta charset="utf-8">
@@ -91,7 +91,7 @@
     	
 		
 		
-		<!--customhtml--><!--customhtml-end-->
+		<!--customhtml--><div class='customhotspot' id='hall'></div><div class='customhotspot' id='garden'></div><!--customhtml-end-->
 		
 		<div id="tmp">
 			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
@@ -114,18 +114,41 @@
 			viewer.addUpdateCallback(function(){});
 			
 			/*panoramas*/
-var testpanorama = new PANOLENS.ImagePanorama( "panoramas/testpanorama.jpg" );
-			testpanorama.addEventListener('progress', function(e){
+var hall = new PANOLENS.ImagePanorama( "panoramas/hall.jpeg" );
+			hall.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
-			testpanorama.addEventListener('load', function(e){
+			hall.addEventListener('load', function(e){
 				//$("#loading").fadeOut();
 			});
-			testpanorama.addEventListener('click', function(e){
+			hall.addEventListener('click', function(e){
 			});
 
-viewer.add( testpanorama );
-$(document).ready(function(){ ChangePanorama('testpanorama'); });
+var infospothall0 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospothall0.position.set( 2664.56, -3077.96, 2893.42 );
+					hall.add(infospothall0);
+infospothall0.addEventListener('click', function(){
+ChangePanorama('garden');
+});
+viewer.add( hall );
+var garden = new PANOLENS.ImagePanorama( "panoramas/garden.jpeg" );
+			garden.addEventListener('progress', function(e){
+				$("#loading").show();
+			});
+			garden.addEventListener('load', function(e){
+				//$("#loading").fadeOut();
+			});
+			garden.addEventListener('click', function(e){
+			});
+
+var infospotgarden0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotgarden0.position.set( -1982.37, -1220.31, 4422.25 );
+					garden.add(infospotgarden0);
+infospotgarden0.addEventListener('click', function(){
+ChangePanorama('hall');
+});
+viewer.add( garden );
+$(document).ready(function(){ ChangePanorama('hall'); });
 
 /*panoramas-end*/
             
@@ -168,7 +191,12 @@
 			viewer.addUpdateCallback(function(){
 				
 				/*viewerupdatecallback*/
-				/*viewerupdatecallback-end*/
+if(viewer.panorama == hall){
+}
+
+if(viewer.panorama == garden){
+}
+/*viewerupdatecallback-end*/
 				
 				
 			});
@@ -237,8 +265,7 @@
 				$(".customhotspot").fadeOut();
 			}
 
-			/*customjs*/
-			/*customjs-end*/
+			/*customjs*//*customjs-end*/
         </script>
 	</body>
 </html>
